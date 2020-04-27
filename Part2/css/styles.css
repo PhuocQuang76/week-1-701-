@@ -1,0 +1,21 @@
+body {
+    margin-left: 100px;
+    margin-right: auto;
+}
+h1{
+    width: 400px;
+    text-shadow: 2px 2px #f7c6ed !important;
+    color: #4e8e7f !important;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#hw2Canvas {
+    border-style: solid;
+    border-color: #4e8e7f;
+}
+
+canvas {
+    margin-top: 50px;
+    display: block;
+}

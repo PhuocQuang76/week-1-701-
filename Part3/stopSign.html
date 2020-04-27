@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Work 1</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+    <h1>Stop Signs</h1>
+    <svg id="svgCanvas" width="500" height="300">
+        <defs>
+            <g id="myGroup">
+                <polygon points="50,50,90,50,115,75,115,115,90,140,50,140,25,115,25,75" style="fill:red;stroke:gray;stroke-width:3" />
+
+                <text x=45 y=100 font-family="san-serif"
+                      font-size="22px" fill="white">STOP
+                </text>
+            </g>
+        </defs>
+
+        <use xlink:href="#myGroup"
+             transform="translate(0,0)">
+        </use>
+
+        <use xlink:href="#myGroup"
+            transform="translate(300,25) rotate(90)">
+        </use>
+
+        <use xlink:href="#myGroup"
+             transform="translate(410, 190) rotate(180)">
+        </use>
+
+        <g>
+            <use xlink:href="#myGroup"
+                 transform="translate(135, 100)">
+            </use>
+            <animateTransform
+            attributeName="transform"
+            begin="0s" dur="0.7s"
+            type="rotate"
+            from="0 205.5 195"
+            to="360 205.5 195"
+            repeatCount="indefinite">
+            </animateTransform>
+        </g>
+    </svg>
+</body>
+</html>

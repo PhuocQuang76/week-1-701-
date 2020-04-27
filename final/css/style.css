@@ -1,0 +1,13 @@
+
+
+
+
+#testCanvas {
+    border-style: solid;
+    border-color: #81687c;
+}
+
+canvas {
+    margin-top: 50px;
+    display: block;
+}
